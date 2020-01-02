@@ -1,0 +1,16 @@
+body {
+	background-image: url(pics/theater.jpg);
+}
+
+.back {
+	position: absolute;
+    top: 46vw;
+    left: 44vw; 
+}
+
+#playbutton {
+	position: absolute;
+	top: 15vw;
+	left: 37vw;
+}
+

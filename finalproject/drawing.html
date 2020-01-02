@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="libraries/p5.js"></script>
+
+<style>
+	body {
+		margin: 0; 
+		overflow: hidden; /*no scroll bar*/
+	}
+
+/*	body{
+	margin: 0;
+	}*/
+
+/*	#container{
+		margin-top: : 25px;
+		margin-left: 200px;
+		margin-right: 200px;
+	}*/
+
+	#block{
+		width: 100%;
+		height:100%;
+		display: none;
+		position: absolute;
+		top: 0px;
+		left:0px;
+		z-index: 0;
+	}
+
+	#canvas{
+		display:block;
+		z-index: 1;
+	}
+
+</style>
+
+</head>
+<body onLoad="loaded()">
+
+	<img onclick="goBack()" id="block" src="css/pics/block.png">
+	<script src="drawingsketch.js"></script>
+	<script type="text/javascript">
+
+		// function clickThis5(){
+		// 	// var timer = 5;
+		// 	// var x = document.createElement("image");
+		// 	// x.setAttribute("src", "image/block.png");
+		// 	// x.setAttribute("width", "100%");
+		// 	// x.setAttribute("height", "100%");
+		// 	// x.setAttribute("alt","block");
+		// 	// document.body.appendChild(x);
+
+		// 	document.getElementById('block').style.width = window.innerWidth + "px";
+		// 	document.getElementById('block').style.height = window.innerHeight + "px";
+		// 	document.getElementById('block').style.display = "block";
+		// 	document.body.style.overflow = "hidden";
+
+		// 	setTimeout(hideImage, 5000);
+		// }
+
+		function goBack(){
+			window.open("real.html");
+		}
+
+		function loaded(){
+			window.setTimeout(CloseMe, 6000);
+		}
+
+		function CloseMe() {
+			window.close();
+		}
+
+	</script>
+</body>
+
+</html>
